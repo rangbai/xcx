@@ -1,0 +1,31 @@
+page {
+  background-color: #f4f4f4;
+  font-size: 32rpx;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.nav > image {
+  width: 400rpx;
+  height: 400rpx;
+  margin: 0 auto;
+  border-radius: 100% ;
+
+
+}
+
+.content {
+  font-size: 45rpx;
+  width: 400rpx;
+  margin: 50rpx auto;
+}
+
+.content > view {
+  text-align: left;
+  padding: 20rpx 0;
+  color: #90a772;
+}

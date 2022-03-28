@@ -1,0 +1,8 @@
+<!--pages/index/index.wxml-->
+<view class="nav">
+ <image src="/images/toux.jpg"/>
+</view>
+<view class="content">
+  <view>姓名：严叙梅</view>
+  <view>微信昵称：让白</view>
+</view>

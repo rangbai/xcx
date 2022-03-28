@@ -1,0 +1,9 @@
+<!--pages/my/my.wxml-->
+<view class="content">
+<view>姓名：严叙梅</view>
+<view>性别：女</view>
+<view>生日：11月9号</view>
+<view>爱好：看书，听音乐</view>
+<view>联系方式：19982043424</view>
+<view>邮箱：yxm147852369@163.com</view>
+</view>

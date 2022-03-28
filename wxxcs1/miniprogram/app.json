@@ -1,0 +1,50 @@
+{
+"pages": [
+  
+  "pages/index/index",
+  "pages/main/main",
+  "pages/xingzuo/xingzuo",
+  "pages/my/my",
+  "pages/nearby/nearby",
+  "pages/message/message",
+  "pages/detals/detals"
+],
+
+
+
+"tabBar": {
+  "color": "#ccc",
+  "selectedColor": "#9FbCC2",
+  "borderStyle": "black",
+  "backgroundColor": "#E1E6E6",
+
+  
+  "list": [
+    {
+      "pagePath": "pages/index/index",
+      "iconPath": "/images/shouye1.png",
+      "selectedIconPath": "/images/shouye.png",
+      "text": "首页"
+    },
+ 
+    
+ 
+    
+    {
+      "pagePath": "pages/main/main",
+      "iconPath": "/images/个人中心_sel (1).png",
+       "selectedIconPath": "/images/个人中心_sel.png",
+       "text": "个人中心"
+     }
+
+  ]
+},
+"permission": {
+  "scope.userLocation": {
+    "desc":"你的位置信息将用于小程序位置接口的效果展示"
+  }
+},
+
+"sitemapLocation": "sitemap.json"
+
+}

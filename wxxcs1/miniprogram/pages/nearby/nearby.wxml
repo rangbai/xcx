@@ -1,0 +1,26 @@
+<!--pages/nearby/nearby.wxml-->
+<view class="outer">
+  <map id="map" longitude='{{longitude}}' latitude='{{latitude}}' markers='{{markers}}' show-location></map>
+  <view class='nav'>
+    <image src='/images/jd.png' mode="aspectFit"></image>
+    <text bindtap='search' data-type='酒店'>酒店</text>
+    <image src='/images/wdms.png' mode="aspectFit"></image>
+    <text bindtap='search' data-type='美食'>美食</text>
+    <image src='/images/yule.png' mode="aspectFit"></image>
+    <text bindtap='search' data-type='娱乐'>娱乐</text>
+    <image src='/images/chaoshi.png' mode="aspectFit"></image>
+    <text bindtap='search' data-type='超市'>超市</text>
+    <image src='/images/gongy.png' mode="aspectFit"></image>
+    <text bindtap='search' data-type='公园'>公园</text>
+  </view>
+<view class='location'>
+  <scroll-view scroll-y>
+      <block wx:for="{{perimeter}}" wx:key="key">
+      <view class="content">
+        <view class="title">{{item.title}}</view>
+          <view class="address">位置：{{item.address}}</view> 
+          </view>
+      </block>
+  </scroll-view>
+  </view>
+  </view>

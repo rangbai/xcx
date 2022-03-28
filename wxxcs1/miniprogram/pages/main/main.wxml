@@ -1,0 +1,25 @@
+<!--pages/main/main.wxml-->
+<view class="avatar">
+  <!-- <image src="/images/avatar.jpg" mode="aspectFill"></image> -->
+  <open-data type="userAvatarUrl"></open-data>
+</view>
+<view class="menu">
+  <view bindtap="my">个人资料
+    <image class="arrow" src="/images/向右.png"></image>
+    
+  </view>
+  <view bindtap="map" >附近推荐
+    <image class="arrow" src="/images/向右.png"></image>
+  </view>
+  
+  <view bindtap="liuyan" >留言板
+    <image class="arrow" src="/images/向右.png"></image>
+  </view>
+  <view bindtap="news">星座运势
+    <image class="arrow" src="/images/向右.png"></image>
+  </view>
+ 
+  <view bindtap="contact" >客服联系方式
+    <image class="arrow" src="/images/向右.png"></image>
+  </view>
+</view>

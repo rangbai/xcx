@@ -1,0 +1,40 @@
+<!--pages/detals/detals.wxml-->
+<view>
+  <view class="title">{{conlist.name}}</view>
+  <view class="view">
+    <text class="txt1">幸运数字 ：</text>
+    <text  class="txt2">{{conlist.number}}</text>
+  </view>
+  <view class="view">
+    <text class="txt1">速配星座 ：</text>
+    <text class="txt2">{{conlist.QFriend}}</text>
+  </view>
+  <view class="view">
+    <text class="txt1">幸运色 ：</text>
+    <text class="txt2">{{conlist.color}}</text>
+  </view>
+   <view class="view">
+    <text class="txt1">健康指数 ：</text>
+    <text class="txt2">{{conlist.health}}%</text>
+  </view>
+   <view class="view">
+    <text class="txt1">爱情指数 ：</text>
+    <text class="txt2">{{conlist.love}}%</text>
+  </view>
+   <view class="view">
+    <text class="txt1">财运指数 ：</text>
+    <text class="txt2">{{conlist.money}}%</text>
+  </view>
+   <view class="view">
+    <text class="txt1">工作指数 ：</text>
+    <text class="txt2">{{conlist.work}}%</text>
+  </view>
+   <view class="view">
+    <text class="txt1">综合指数 ：</text>
+    <text class="txt2">{{conlist.all}}%</text>
+  </view>
+   <view class="view">
+    <text class="txt1">今日概述</text>
+    <text class="txt3">{{conlist.summary}}</text>
+  </view>
+</view>

@@ -1,0 +1,33 @@
+<!--pages/message/message.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <block wx:if="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:else open-type="getUserProfile" bindgetuserinfo="getUserProfile"> 获取头像昵称 </button>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+  <view class='msg-box'>
+    <!-- 留言 -->
+    <view class='send-box'>
+      <input bindinput="changeInputVal" class='input' type='text' value="{{inputVal}}" placeholder='请留言...' placeholder-class='place-input'></input>
+      <button  size='mini' type='primary' bindtap='addMsg' disabled="{{disabled}}" >添加</button>
+    </view>
+    <text class='msg-info' wx:if="{{msgData.length==0}}">暂无留言...</text>
+    <!-- 留言列表 -->
+    <view class='list-view'>
+        <view  class='item' wx:for="{{list}}">  
+          <text class='liuyanName'>{{item.liuyanName}}</text><text class="liuyanFH">说：</text><text class="liuyanText">{{item.inputVal}}</text>
+          <icon type='cancel' data-index="{{item._id}}" class='close-btn' bindtap="delMsg"></icon>
+        </view>
+        </view>
+  </view>
+  
+
+
+
+
